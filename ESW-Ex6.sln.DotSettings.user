@@ -1,0 +1,21 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1929ca23_002D7c60_002D440d_002D8f90_002Dd7777014bb7d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test_LinkedList_size_0 #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_LinkedList_size_0&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=439b76ba_002D928c_002D4c6b_002D9d31_002De96f160a0155/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_LinkedList_size_0 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_LinkedList_size_0&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bac28283_002D2d3a_002D48dd_002D9fe9_002Da2c0196cca45/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_LinkedList_size_0 #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_LinkedList_size_0&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c0d95049_002D14a0_002D4b1c_002Dbd9b_002D3184231d5957/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_LinkedList_size_0" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_LinkedList_size_0&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

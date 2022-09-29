@@ -3,18 +3,19 @@
 
 extern "C"{
     //add external libs
-#include "../LinkedList/LinkedList.h"
-
+    #include "LinkedList.h"
+    
 }
 
-LinkedList _list;
 
 class LinkedListTest : public ::testing::Test
 {
+
 protected:
+    LinkedList _list;
     void SetUp() override
     {
-        _list = LinkedList_create();
+       _list = LinkedList_create();
     };
     void TearDown() override
     {
@@ -24,6 +25,8 @@ protected:
 
 TEST_F(LinkedListTest, Test_LinkedList_size_0)
 {
-    uint16_t value = LinkedList_length(_list);
-    ASSERT_EQ(value,0);
+    uint16_t x = LinkedList_length(_list);
+    ASSERT_EQ(x,0);
 }
+    
+    
