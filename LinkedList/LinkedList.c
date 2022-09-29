@@ -13,24 +13,29 @@ typedef struct LinkedList_st
 LinkedList LinkedList_create(void)
 {
     LinkedList newList = calloc(sizeof(LinkedList),1);
-    newList->head = calloc(sizeof(LinkedNode),1);
+    newList->head = NULL;
+
+    if(newList == NULL)
+    {
+        return NULL;
+    }
+    
     return newList;
 }
 
 ListReturnCode LinkedList_destroy(LinkedList self)
 {
-    if(self==NULL)
+    if(NULL != self)
     {
-        return LINKEDLIST_NOT_FOUND;
+        free(self++);
+        return LINKEDLIST_OK;
     }
-
-    free(self);
-    return LINKEDLIST_OK;
+    return LINKEDLIST_NOT_FOUND;
 }
 
 ListReturnCode LinkedList_push(LinkedList self, void* item)
 {
-    LinkedNode newNode = malloc(sizeof(LinkedNode));
+    LinkedNode newNode = calloc(sizeof(LinkedNode),1);
     newNode->item=item;
     newNode->next = self->head;
     self->head=newNode;
@@ -61,8 +66,11 @@ void* LinkedList_peekItemByIndex(LinkedList self, uint16_t index)
 }
 uint16_t LinkedList_length(LinkedList self)
 {
-    if(self==NULL) return LINKEDLIST_NOT_FOUND;
-    else return self->size;
+    if(self == NULL)
+    {
+        return NULL;
+    }
+    return self->size;
 }
 void LinkedList_clear(LinkedList self)
 {

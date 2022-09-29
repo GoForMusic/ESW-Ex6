@@ -20,17 +20,24 @@ protected:
     };
 };
 
-TEST_F(LinkedListTest, Test_LinkedList_size_0)
+TEST_F(LinkedListTest, TestLinkedListSize0)
 {
-    uint16_t x = LinkedList_length(_list);
-    ASSERT_EQ(x,0);
+    EXPECT_EQ(0,LinkedList_length(_list));
 }
 
-TEST_F(LinkedListTest, Test_Clear_LinkedList)
+TEST_F(LinkedListTest, TestLengthAfterAddingOneItem)
 {
-    LinkedList_push(_list,"Test");
-    uint16_t x = LinkedList_length(_list);
-    ASSERT_EQ(x,1);
+    int x = 1;
+    int* p = &x;
+    LinkedList_push(_list,p);
+    EXPECT_EQ(1,LinkedList_length(_list));
 }
-    
+
+TEST_F(LinkedListTest, TestRemoveOneItem)
+{
+    char* sendItem = "Test";
+    LinkedList_push(_list,sendItem);
+    char* returnItem = (char*)LinkedList_pull(_list);
+    EXPECT_STREQ("Test",returnItem);
+}
     
