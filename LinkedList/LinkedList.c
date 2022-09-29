@@ -1,24 +1,19 @@
 ﻿#include "LinkedList.h"
+#include "ListNode.h"
 
 #include <stdlib.h>
-
-typedef struct ListNode_st
-{
-    void* item;
-    struct ListNode* next;
-}ListNode_st;
 
 typedef struct LinkedList_st
 {
     uint16_t size;
     LinkedNode head;
-    LinkedNode current;
 }LinkedList_st;
 
 // -- construct & de-construct
 LinkedList LinkedList_create(void)
 {
     LinkedList newList = calloc(sizeof(LinkedList),1);
+    newList->head = calloc(sizeof(LinkedNode),1);
     return newList;
 }
 
@@ -35,11 +30,22 @@ ListReturnCode LinkedList_destroy(LinkedList self)
 
 ListReturnCode LinkedList_push(LinkedList self, void* item)
 {
-    return LINKEDLIST_NOT_FOUND;
+    LinkedNode newNode = malloc(sizeof(LinkedNode));
+    newNode->item=item;
+    newNode->next = self->head;
+    self->head=newNode;
+    self->size++;
+    return LINKEDLIST_OK;
 }
 void* LinkedList_pull(LinkedList self)
 {
-    
+    //save reference to first link
+    LinkedNode tempLink = self->head;
+    //mark next to first link as first 
+    self->head = self->head->next;
+    self->size--;
+    //return the item link
+    return tempLink->item;
 }
 ListReturnCode LinkedList_containsItem(LinkedList self, void* item)
 {
@@ -51,7 +57,7 @@ ListReturnCode LinkedList_removeItem(LinkedList self, void* item)
 }
 void* LinkedList_peekItemByIndex(LinkedList self, uint16_t index)
 {
-    
+    return LINKEDLIST_NOT_FOUND;
 }
 uint16_t LinkedList_length(LinkedList self)
 {
@@ -60,7 +66,8 @@ uint16_t LinkedList_length(LinkedList self)
 }
 void LinkedList_clear(LinkedList self)
 {
-    
+    self->size=0;
+    free(self->head);
 }
 LinkedNode LinkedList_getIterator(LinkedList self)
 {

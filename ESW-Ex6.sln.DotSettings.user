@@ -1,12 +1,43 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1929ca23_002D7c60_002D440d_002D8f90_002Dd7777014bb7d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test_LinkedList_size_0 #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=02f39386_002D0ecd_002D421a_002D8377_002Da1218eaf082c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_Clear_LinkedList" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Not&gt;&#xD;
+    &lt;Project Location="C:\Users\Adi-PC\RiderProjects\ESW-Ex6\TDD" Presentation="&amp;lt;TDD&amp;gt;" /&gt;&#xD;
+  &lt;/Not&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1929ca23_002D7c60_002D440d_002D8f90_002Dd7777014bb7d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_LinkedList_size_0 #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_LinkedList_size_0&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_Clear_LinkedList&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=38437d5a_002D3a1d_002D4bc2_002D91d7_002Dd567a22aebf0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_Clear_LinkedList #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_Clear_LinkedList&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=439b76ba_002D928c_002D4c6b_002D9d31_002De96f160a0155/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_LinkedList_size_0 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_LinkedList_size_0&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=75145ac6_002Db32f_002D4f40_002D9b5c_002D3fb209a8d319/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_Clear_LinkedList #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_Clear_LinkedList&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=95d45732_002D3c71_002D4046_002D9f5d_002D1e7f79b2787d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test_Clear_LinkedList #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_Clear_LinkedList&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=af3905fd_002Dfe89_002D4c9e_002Dbf4a_002D03c04b590893/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_Clear_LinkedList #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_Clear_LinkedList&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b0c3ba8d_002D4c20_002D4b14_002D89c0_002D481bbc7dfe95/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_Clear_LinkedList #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;GTest::EB150D2D-D2BD-4A68-8220-D1FF86E1E362::Windows,Version=v10.0.19041::LinkedListTest.Test_Clear_LinkedList&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bac28283_002D2d3a_002D48dd_002D9fe9_002Da2c0196cca45/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_LinkedList_size_0 #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

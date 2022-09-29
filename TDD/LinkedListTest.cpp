@@ -1,12 +1,9 @@
 #include "gtest/gtest.h"
 
-
 extern "C"{
     //add external libs
-    #include "LinkedList.h"
-    
+    #include <LinkedList.h>
 }
-
 
 class LinkedListTest : public ::testing::Test
 {
@@ -27,6 +24,13 @@ TEST_F(LinkedListTest, Test_LinkedList_size_0)
 {
     uint16_t x = LinkedList_length(_list);
     ASSERT_EQ(x,0);
+}
+
+TEST_F(LinkedListTest, Test_Clear_LinkedList)
+{
+    LinkedList_push(_list,"Test");
+    uint16_t x = LinkedList_length(_list);
+    ASSERT_EQ(x,1);
 }
     
     
