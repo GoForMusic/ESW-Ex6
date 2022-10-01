@@ -16,7 +16,7 @@ protected:
     };
     void TearDown() override
     {
-        //LinkedList_destroy(_list);
+        LinkedList_destroy(_list);
     };
 };
 
@@ -69,7 +69,7 @@ TEST_F(LinkedListTest, TestGetItemOnSpecificIndex)
     EXPECT_STREQ("Test98",returnItem);
 }
 
-TEST_F(LinkedListTest, TestAnItemOnDifferentLocation)
+TEST_F(LinkedListTest, TestAnItemOnDifferentLocationOnDifferentLocation)
 {
     for(int i=1;i<=100;i++)
     {
