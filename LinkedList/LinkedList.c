@@ -79,7 +79,6 @@ ListReturnCode LinkedList_push(LinkedList self, void* item)
     newNode->next = self->head;
     self->head=newNode;
     self->size++;
-    free(newNode);
     return LINKEDLIST_OK;
 }
 
@@ -148,6 +147,7 @@ ListReturnCode LinkedList_removeItem(LinkedList self, void* item)
     // Unlink the node from linked list
     prev->next = temp->next;
     free(temp); // Free memory
+    free(prev);
     return LINKEDLIST_OK;
 }
 
@@ -168,7 +168,7 @@ void* LinkedList_peekItemByIndex(LinkedList self, uint16_t index)
         count++;
         _current = _current->next;
     }
-    
+
     return LINKEDLIST_NOT_FOUND;
 }
 
