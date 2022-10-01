@@ -12,25 +12,32 @@ typedef struct LinkedList_st
 // -- construct & de-construct
 LinkedList LinkedList_create(void)
 {
-    LinkedList newList = calloc(sizeof(LinkedList),1);
-    newList->head = NULL;
-
-    if(newList == NULL)
+    LinkedList self = calloc(sizeof(LinkedList),1);
+    
+    if(self == NULL)
     {
-        return NULL;
+        return 0;
     }
     
-    return newList;
+    return self;
 }
 
 ListReturnCode LinkedList_destroy(LinkedList self)
 {
-    if(NULL != self)
+   if(self==NULL) return LINKEDLIST_NOT_FOUND;
+    if(self->head!=NULL)
     {
-        free(self++);
-        return LINKEDLIST_OK;
+        while(self->head->next!=NULL)
+        {
+            free(self->head->next->item);
+            free(self->head->next->next);
+            free(self->head->next);
+        }
+        free(self->head);
     }
-    return LINKEDLIST_NOT_FOUND;
+    free(self->size);
+    free(self);
+    
 }
 
 ListReturnCode LinkedList_push(LinkedList self, void* item)
@@ -58,17 +65,46 @@ ListReturnCode LinkedList_containsItem(LinkedList self, void* item)
 }
 ListReturnCode LinkedList_removeItem(LinkedList self, void* item)
 {
-    return LINKEDLIST_NOT_FOUND;
+    if(self==NULL) return LINKEDLIST_EMPTY;
+
+    LinkedNode _currentNode =calloc(sizeof(LinkedNode),1);
+    _currentNode=self->head;
+    if(_currentNode->next==NULL) return LINKEDLIST_NOT_FOUND;
+
+    while(_currentNode->next->item!=item)
+    {
+        if(_currentNode->item==NULL)
+            return LINKEDLIST_NOT_FOUND;
+        else
+        {
+            _currentNode = _currentNode->next;
+        }
+    }
+
+    LinkedNode to_delete = _currentNode->next;
+    _currentNode->next=_currentNode->next->next;
+    self->size--;
+    free(to_delete);
+    return LINKEDLIST_FOUND;
 }
 void* LinkedList_peekItemByIndex(LinkedList self, uint16_t index)
 {
+    LinkedNode _current = self->head;
+    int count = 0;
+    while (_current != NULL) {
+        if (count == index)
+            return (_current->item);
+        count++;
+        _current = _current->next;
+    }
+    
     return LINKEDLIST_NOT_FOUND;
 }
 uint16_t LinkedList_length(LinkedList self)
 {
     if(self == NULL)
     {
-        return NULL;
+        return LINKEDLIST_EMPTY;
     }
     return self->size;
 }
